@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <link href="/css/all.min.css" rel="stylesheet">
+        <link href="/css/main.css" rel="stylesheet">
+        <link href="/css/shop.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="heading">
+            <div class="container">
+                <h1>cata</h1>
+                <ul class="links">
+                    <li class="fas fa-close"></li>
+                    <a href="/basic.html"><li class="active">Home</li></a>
+                    <a href="/css/shop1.html"><li>Shop</li></a>
+                    
+                    <a href="/about.html"><li>Blog</li></a>
+                    <a href="/contact.html"><li>Contact</li></a>
+                    <a href="/cart.html"><li class="fas fa-cart-shopping"></li></a>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="shirt_box">
+            <div class="images" >
+                <div class="main"><img src="/images/products/n5.jpg"></div>
+                <div class="suggest">
+                    <img src="/images/products/f5.jpg">
+                    <img src="/images/products/f6.jpg">
+                    <img src="/images/products/n5.jpg">
+                    <img src="/images/products/n6.jpg">
+                </div>
+            </div>
+            <div class="section">
+                <p>Home/T-Shirt</p>
+                <h1>Men's fashion T Shirt</h1>
+                <h1>$ 139.00</h1>
+                <select>
+                    <option>select size</option>
+                    <option>xl</option>
+                    <option>xll</option>
+                    <option>small large</option>
+                    <option>large</option>
+                </select>
+                <div>
+                    <input type="number" value="1" style="width: 40px;">
+                    <button>Add To Cart</button>
+                </div>
+                <h1>product details</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos quam sequi maiores
+                    fugiat ipsum tempora aperiam
+                    ipsa enim natus placeat! Amet numquam explicabo sequi
+                </p>
+            </div>
+        </div>
+        <div class="sign">
+            <div>
+                <h1>Sign Up For News</h1>
+                <p>Get E-Mail updates about our latest shop and<span>special offers</span></p>
+            </div>
+            <form>
+                <input type="email" placeholder="Enter your Email">
+                <input type="submit" value="SignUp">
+            </form>
+        </div>
+        <div class="footer">
+            <div>
+                <h1>Contact</h1>
+                <div>
+                    <a href=""><p><span>address:</span></p></a>
+                    <a href=""><p><span>phone:</span>+01 2222 365/(+91)0123456789</p></a>
+                    <a href=""><p><span>hours:</span>10:00-18:00.mon-sat</p></a>
+                </div>
+            </div>
+            <div>
+                <h1>About</h1>
+                <div>
+                    <a href=""><p>About Us</p></a>
+                    <a href=""><p>Delivery Information</p></a>
+                    <a href=""><p>Privacy Policy</p></a>
+                    <a href=""><p>Terms & Conditions</p></a>
+                    <a href=""><p>Contact US</p></a>
+                </div>
+            </div>
+            <div>
+                <h1>MY Account</h1>
+                <div>
+                    <a href=""><p>sign in</p></a>
+                    <a href=""><p>view cart</p></a>
+                    <a href=""><p>my wishlit</p></a>
+                    <a href=""><p>tack my order</p></a>
+                    <a href=""><p>Help</p></a>
+                </div>
+            </div>
+            <div>
+                <h1>install app</h1>
+                <div>
+                    <p>from app store or google play</p>
+                    <img src="/images/store/app.jpg" width="120px" style="display: inline-block; border: 1.5px solid #018878;">
+                    <img src="/images/store/app.jpg" width="120px" style="display: inline-block; border: 1.5px solid #018878;">
+                    <p>srcured payment gateway</p>
+                    <img src="/images/store/pay.png" width="200px">
+                </div>
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll(".suggest img").forEach(function(ele){
+                ele.addEventListener("click",function(e){
+                    let main=document.querySelector(".main img");
+                    main.src=ele.src;
+                }
+                )
+            })
+            
+        </script>
+        <script src="/interact.js"></script>
+    </body>
+</html>
